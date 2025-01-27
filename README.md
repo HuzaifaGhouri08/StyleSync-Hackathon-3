@@ -30,5 +30,5 @@
 
 ## Day 7: Live Deployment
 - Implementing environment variables for sensitive information.
-- Conducted a final code review.
-- Conducted a final user testing session.
+- Conducted a final code review & user testing session.
+- Integrated Sentry for error tracking and performance monitoring.
