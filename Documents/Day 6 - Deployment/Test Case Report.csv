@@ -1,0 +1,8 @@
+Index,Test Case ID,Description,Steps,Expected Result,Actual Result,Status,Remarks
+1,TC1,Validation Product Listing,Open Product Page > Verify Products,Products Displayed,Products Displayed,Passed,No issues Found
+2,TC2,Test API error Handling,Disconnect API > Refresh Page,Fallback Message Shown,Fallback Message Shown,Passed,Handled Grecefully
+3,TC3,Check Cart Functionally,Add item to Cart > Verify Cart,Cart Updates Correctly,Cart Updates Correctly,Passed,Works as Expected
+4,TC4,Test Responsiveness Layout,Resize Browser Window > Check Layout,Layout Adjust Properly,Layout Adjust Properly,Passed,Responsive Verifies
+5,TC5,Validate Search Functionality,Enter a Query in the Search Bar > Verify Results,Search Result Displayed,Search Result Displayed,Passed,Search Works Correctly
+6,TC6,Check Navigation,Click on a Navigation Links > Verify Redirection,Correct Pages Loaded,Correct Pages Loaded,Passed,Navigation Functional
+7,TC7,Validate Performance,Run Lighthouse Performance Test,Score Above 90+,Score 95,Passed,Performance Optimized

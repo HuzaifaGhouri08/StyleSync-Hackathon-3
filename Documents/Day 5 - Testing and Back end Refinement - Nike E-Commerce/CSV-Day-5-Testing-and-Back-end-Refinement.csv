@@ -1,0 +1,19 @@
+Index,Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Remarks
+1,TC1,Product Listing Test,Check if products are displayed correctly on the page,Products should appear with images,Products are displayed correctly,Passed,Everythings works fine
+2,TC2,Filters and Search Test,Apply filters and search for a product,Filters and search should return accurate results,Filters and search work as expected,Passed,No Issue
+3,TC3,Cart Operations Test,"Add, remove, and update items in the cart",Cart should update item quantities and totals correctly,"Cart is updating correctly when items are added, removed, or updated",Passed,No Issue
+4,TC4,Dynamic Routing Test,Click on a product and verify the correct product detail page loads,Product detail page should open with the correct URL and data,Product detail page opens correctly with the correct URL,Passed,No Issue
+5,TC5,API Response Test,Check product API to verify it returns data,API should return correct product data,API correctly returns product data,Passed,API works as expected
+6,TC6,End-to-End Flow Test,"Test the entire user flow: search, add to cart, and checkout","User should be able to search, add items to the cart, and checkout without issues",End-to-end flow works perfectly,Passed,No Issue
+7,TC7,Handle API errors in the product fetching process,Make the API call to fetch products.>2. Introduce an error>3. Observe if error message appears.,"""Unable to load products. Please try again later.""",Error message shown as expected,Passed,Error handling implemented correctly.
+8,TC8,Display fallback UI when no products are found,,"""No products found matching [search term]"" message",Correct fallback message displayed.,Passed,Fallback UI works properly when no results are found.
+9,TC9,Check First Contentful Paint (FCP),Run Lighthouse and observe FCP timing,FCP should be under 1 second,FCP is 0.8 seconds,Passed,FCP is within acceptable range.
+10,TC10,Check Largest Contentful Paint (LCP),Run Lighthouse and observe LCP timing,LCP should be under 2.5 seconds,LCP is 14.3 seconds,Failed,optimize images or lazy load
+11,TC11,Check Total Blocking Time (TBT),Run Lighthouse and observe TBT,TBT should be under 200 ms,TBT is 1310 ms,Failed,reduce blocking tasks or JavaScript execution
+12,TC12,Check Cumulative Layout Shift (CLS),Run Lighthouse and observe CLS,CLS should be under 0.1,CLS is 0.47,Failed,stabilize elements
+13,TC13,Check Speed Index (SI),Run Lighthouse and observe SI,Speed Index should be under 4 seconds,SI is 1.7 seconds,Passed,SI is within acceptable range
+14,TC14,Check in Chrome,Test application on Chrome browser,Layout and functionality render correctly,Layout and functionality render correctly,Passed,No issues observed.
+15,TC15,Check in Edge,Test application on Microsoft Edge,Layout and functionality render correctly,Layout and functionality render correctly,Passed,No issues observed.
+16,TC16,Test application on a physical mobile,"Open app on a mobile device, check responsiveness",App should adjust to mobile screens,App adjusted to mobile screens perfectly,Passed,No issues observed.
+17,TC17,Wrong Email ,"Enter an invalid email in the email input field > Click on the ""Continue""",Order should not be confirmed,Order gets confirmed despite invalid email,Failed,Email validation is not working properly.
+18,TC18,API Link Uses HTTPS,Inspect the API call in the browser's developer tools > Verify the API call link is over HTTPS,API link should be secure (HTTPS),API link is secure (HTTPS),Passed,No Issue
