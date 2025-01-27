@@ -22,6 +22,7 @@ interface NProducts {
 export default function Products() {
   const [products, setProducts] = useState<NProducts[]>([]);
   const [showFilters, setShowFilters] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [originalProducts, setOriginalProducts] = useState<NProducts[]>([]);
   const [error, setError] = useState<string | null>(null);
   const { searchTerm } = useSearch();
@@ -29,6 +30,7 @@ export default function Products() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+        setIsLoading(true); 
         const NikeProducts = await client.fetch(`*[_type == "product"]{
           id,
           productName,
@@ -45,6 +47,8 @@ export default function Products() {
       } catch (error) {
         console.error("Failed to fetch products:", error);
         setError("Error: Unable to load products. Please try again later.");
+      } finally {
+        setIsLoading(false); 
       }
     };
 
@@ -115,7 +119,13 @@ export default function Products() {
               Reset Filters
             </button>
           </div>
-
+          
+          {isLoading && (
+            <div className="text-center py-4"> 
+              <p>Loading products...</p> 
+            </div>
+          )}
+          
           {error && (
             <div className="text-center py-4 text-red-500">
               <p>{error}</p>
