@@ -32,3 +32,12 @@
 - Implementing environment variables for sensitive information.
 - Conducted a final code review & user testing session.
 - Integrated Sentry for error tracking and performance monitoring.
+
+## Deployed Links
+- [Vercel](https://stylesyncs.vercel.app/)
+- [Netlify](https://stylesyncs.netlify.app/)
+
+### Presented By
+- Huzaifa Khan
+- #419013
+- GIAIC
